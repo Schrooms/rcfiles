@@ -7,3 +7,5 @@ export LSCOLOR=exfxcxdxbxegedabagacad
 
 # pimp commands
 alias grep='grep --color=auto'
+
+bash eyecandy.sh
