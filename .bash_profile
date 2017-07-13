@@ -22,6 +22,6 @@ export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode – cyan
 
 #git complete
-source ~/git-completion.bash
+source .git-completion.bash
 
 eval "$(rbenv init -)"
