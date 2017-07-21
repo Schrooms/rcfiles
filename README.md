@@ -6,5 +6,10 @@ just some setup files
 run:
 
 ```
-rake all
+$ rake all
+
+or for all options see
+
+$ rake -T
+
 ```
