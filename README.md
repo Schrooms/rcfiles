@@ -11,5 +11,4 @@ $ rake all
 or for all options see
 
 $ rake -T
-
 ```
