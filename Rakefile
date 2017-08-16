@@ -10,7 +10,7 @@ desc 'copy the bash_profile'
 task :bash do
   puts "copying the bash profile"
   FileUtils.cp '.bash_profile', "#{ENV['HOME']}/.bash_profile"
-  FileUtils.cp '.git-completion.bash', "#{ENV['HOME']}/.git-completion.bash"
+  FileUtils.cp 'git-completion.bash', "#{ENV['HOME']}/git-completion.bash"
 end
 
 desc 'copy the editor defaults'
