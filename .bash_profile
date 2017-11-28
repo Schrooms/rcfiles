@@ -1,5 +1,10 @@
 #PS1='[\u@\h \W]\$' #default
-PS1='\[\e[1;31m\](\[\e[0m\]\d \t\[\e[1;31m\])\[\e[0m\]   \n\[\e[32m\][\u@\h \W]\$\[\e[0m\] '
+
+# show branch
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\[\033[32m\][\u@\h \W]\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 export CLICOLOR=1
 export LSCOLOR=exfxcxdxbxegedabagacad
